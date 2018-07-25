@@ -6,14 +6,13 @@ class PostsController < ApplicationController
     end
 
     def create
-        puts "parmas = #{1}"
         @post = Post.new(post_params)
         if @post.save
-        redirect_to posts_path, :notice => "Your post has been saved"
+            redirect_to posts_path, :notice => "Your post has been saved"
         else
-        # This line overrides the default rendering behavior, which
-        # would have been to render the "create" view.
-        render "new"
+            # This line overrides the default rendering behavior, which
+            # would have been to render the "create" view.
+            render "new"
         end
     end
 
