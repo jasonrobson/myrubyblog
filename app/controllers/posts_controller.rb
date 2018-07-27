@@ -1,7 +1,5 @@
 class PostsController < ApplicationController
     def index
-        @content_first = 'Este e o texto do primeiro comentario'
-        @content_second = 'Este e o texto do segundo comentario'
         @posts = Post.all
     end
 

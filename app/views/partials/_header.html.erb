@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Myrubyblog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css" />
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="header-wrapper">
+        <div id="header">
+          <div id="logo">
+            <h1><a href="#">My Ruby Blog</a></h1>
+            <p>Learning Ruby on Rails</p>
+          </div>
+          <div id="menu">
+            <ul class="main-nav">
+              <li class="current_page_item"><%= link_to "Home", root_path %></li>
+              <li><%= link_to "About", pages_about_path %></li>
+              <li><%= link_to "Blog", posts_path %></li>
+              <li><%= link_to "Contact", pages_contact_path %></li>
+              <li><%= link_to "Resources", pages_resources_path %></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end #header -->

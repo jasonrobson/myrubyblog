@@ -234,6 +234,40 @@ a:hover {
 	padding: 40px 0px 0px 0px;
 }
 
+.content_table a:link {	
+	color: red;
+}
+
+.content_table {	
+	color: black;
+}
+
+.content_table thead, .content_table th {	
+	background-color: transparent;
+}
+
+.content_page_title {
+	color: #ffffff;
+}
+
+.content_page_hr {
+	margin-bottom: 25px;
+}
+
+.content_page_searchresult {
+	background-color: #A32833;
+	color: white;
+	padding: 7px;
+}
+
+#content-submit {
+	/* width: 50px;
+	height: 26px; */
+	border: none;
+	background: #D93544;
+	color: #FFFFFF;
+}
+
 .post,.post_full,.page {
 	margin-bottom: 30px;
 	padding: 30px 20px 20px 20px;

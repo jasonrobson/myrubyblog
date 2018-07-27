@@ -1,7 +1,26 @@
-<h1>Blog Posts</h1>
+<hr />
+<h1 class="content_page_title">Blog Posts</h1>
+<hr class="content_page_hr"/>
 <% @posts.each do |post| %>
-    <h3><%= link_to post.title, post %></h3>
-    <p><%= post.body %></p>
-    <hr>
+    <div class="post">
+        <h2 class="title"><%= link_to post.title, post %></h2>
+        <div class="entry">
+            <p><%= post.body %></p>
+        </div>
+        <div class="byline">
+            <table class="content_table">
+            <thead>
+                <tr>
+                <th>
+                    <p class="meta">May 07, 2012 Posted by <a href="#">Someone</a></p>
+                </th>
+                <th>
+                    <a href="#" title="b0x w">Comments</a></p>
+                </th>
+                </tr>
+            </thead>
+            </table>
+        </div>
+    </div>
 <% end %>
 <%= link_to "Add new post", new_post_path %>

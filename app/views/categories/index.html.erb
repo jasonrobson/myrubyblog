@@ -1,21 +1,23 @@
-<p id="notice"><%= notice %></p>
+<div class="post">
+  <p id="notice"><%= notice %></p>
 
-<h1>Categories</h1>
+  <h1>Categories</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @categories.each do |category| %>
+  <table>
+    <thead>
       <tr>
-        <td><%= category.name %></td>
-        <td><%= link_to 'Show', category %></td>
+        <th>Name</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @categories.each do |category| %>
+        <tr>
+          <td><%= category.name %></td>
+          <td><%= link_to 'Show', category %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
